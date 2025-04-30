@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.phone-container {
+    position: relative;
+    margin-right: 50px;
+}
+
+.phone-img {
+    width: 380px;
+}
+
+.slider {
+    position: absolute;
+    top: 52px;
+    left: 63px;
+    width: 250px;
+    height: 538px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.form-container {
+    width: 350px;
+}
+
+.form-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.facebokk{
+    display: flex;
+    margin-left: 20px;
+}
+.facebokk a{
+    color: #0095f6;
+    cursor: pointer;
+}
+.facebokk img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.or .line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or p {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #8e8e8e;
+    font-weight: bold;
+}
+
+.fb-login {
+    color: #385185;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.forgot {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 12px;
+    display: block;
+    cursor: pointer;
+}
+
+.signup-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    padding: 20px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.get-app {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.app-stores img {
+    width: 136px;
+    margin: 10px 5px;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+footer .links a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #8e8e8e;
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .phone-container {
+        margin: 0 0 20px 0;
+    }
+}
